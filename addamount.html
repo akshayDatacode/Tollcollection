@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TAX PAYER Dashboard</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css4/util.css">
+	<link rel="stylesheet" type="text/css" href="css4/main2.css">
+    <link href="dash.css" rel="stylesheet">
+<!--===============================================================================================-->
+</head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+color: #333;
+}
+
+.topnav {
+margin-top:100px;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #25499f;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #25499f;
+  color: white;
+}
+.form-inline input {
+  vertical-align: left;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+ body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 30%;
+  background: #f1f1f1;
+margin-left:1px;
+}
+
+form.example button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.button {
+  background-color: #0b7dda ;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+margin-left: 1px;
+  cursor: pointer;
+}
+</style>
+<body>
+
+	 <!-- ***** Header Area Start ***** -->
+    <header class="header_area clearfix">
+        <div class="container-fluid h-100">
+            <div class="row h-100">
+                <!-- Menu Area Start -->
+                <div class="col-12 h-100">
+                    <div class="menu_area h-100">
+                        <nav class="navbar h-100 navbar-expand-lg align-items-center">
+                            <!-- Logo -->
+                          <a class="navbar-brand" href="index.html"> <h3>DATACODE AUTOMATIC TOLL SYSTEM</h3></a>
+
+                            <!-- Menu Area -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
+                                <ul class="navbar-nav animated" id="nav">
+                                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                                   
+
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                    
+                                  
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                               
+                               
+                                
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+
+
+<section class="welcome_area clearfix">
+<div class="topnav">
+  <a href="#home">Dashboard</a>
+  <a href="#news">Profile</a>
+  <a href="vehicle.html">Vehicle Registration</a>
+  <a  class="active" href="#home">Wallet</a>
+ <a href="#about">Chalan</a>
+<a href="transhistory.html">Transaction History</a>
+</div>
+<br>
+   <div class="col-sm-8 text-centre"> 
+
+<h3 style="text-align:left;"><a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-user"></span> Name
+        </a><form class="form-inline" action="/action_page.php">
+ <input type="name" id="name" placeholder="" name="name"></h3>
+ 
+<h3 style="text-align:left;"><a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-user"></span> Amount
+        </a>
+
+
+  
+      </form>
+<br>
+<br>      
+<p style="text-align:left;"><a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-plus"></span> Add Amount</a></p>
+<form class="example" action="/action_page.php">
+  <input type="text" placeholder="Add Amount" name="add amount">
+  <button type="submit"><i class="fa fa-plus"></i></button>
+<br>
+<br>
+  <p style="text-align:left;"><a href="#" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-time"></span>Transaction History</a></p> 
+</form>
+<br>
+
+
+
+     <!DOCTYPE html>
+
+    </div>
+    </div>
+
+</section>
+<br>
+<br>
+
+
+
+
+	   <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area clearfix">
+        <!-- Top Fotter Area -->
+         
+        <!-- Fotter Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100">
+                        <div class="footer-bottom-content h-100 d-md-flex justify-content-between align-items-center">
+                            
+                            <div class="footer-social-info">
+                                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer Area End ***** -->
+
